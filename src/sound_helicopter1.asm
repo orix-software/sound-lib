@@ -1,10 +1,11 @@
+; proto = void sound_helicopter1();
 .include "telestrat.inc"
 
 .export _sound_helicopter1
 
-.proc  _sound_helicopter1
-    ldx #<sound
-    ldy #>sound
+.proc _sound_helicopter1
+    ldx	  #<sound
+    ldy   #>sound
     BRK_TELEMON XSONPS
     rts
 sound:

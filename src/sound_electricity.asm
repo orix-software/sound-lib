@@ -1,9 +1,9 @@
 
 .include "telestrat.inc"
 
-.export _sound_electricty
+.export _sound_electricity
 
-.proc  _sound_electricty
+.proc  _sound_electricity
     ldx #<sound
     ldy #>sound
     BRK_TELEMON XSONPS
